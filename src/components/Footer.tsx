@@ -98,9 +98,9 @@ const Footer = () => {
                 © {currentYear} Atemena Tsafack Arcel Martial. Tous droits réservés.
               </p>
               <p className="text-gray-400 text-sm flex items-center space-x-1">
-                <span>Fait avec</span>
+                <span>Think outside</span>
                 <Heart className="text-red-400 w-4 h-4" />
-                <span>et React</span>
+                <span>the code</span>
               </p>
             </div>
           </div>
