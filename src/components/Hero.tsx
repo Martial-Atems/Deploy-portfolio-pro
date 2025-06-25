@@ -22,9 +22,9 @@ const Hero: React.FC = () => {
           <div className="mb-8 relative">
             <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-blue-500/30 shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img 
-                src="/photo_2025-06-23_12-25-05.jpg" 
+                src="public/photo_2025-06-23_12-25-05.jpg" 
                 alt="Atemena Martial"
-                className="w-full h-full object-cover"
+                // className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full opacity-20 blur-xl animate-pulse"></div>

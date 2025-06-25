@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
       image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
       demoLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/Martial-Atems/Deploy-portfolio-pro",
       category: "web",
       icon: <Globe className="w-5 h-5" />
     },

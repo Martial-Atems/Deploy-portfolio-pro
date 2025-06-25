@@ -8,13 +8,13 @@ const Footer: React.FC = () => {
     {
       name: 'GitHub',
       icon: <Github size={20} />,
-      url: 'https://github.com',
+      url: 'https://github.com/Martial-Atems',
       color: 'hover:text-gray-400'
     },
     {
       name: 'LinkedIn',
       icon: <Linkedin size={20} />,
-      url: 'https://linkedin.com',
+      url: 'https://www.linkedin.com/in/martial-atem%E2%80%99s-219828367?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
       color: 'hover:text-blue-400'
     },
     {
