@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Mail, Phone, Send, MapPin, MessageCircle } from 'lucide-react';
+import { Mail, Send, MapPin, MessageCircle } from 'lucide-react';
+import emailjs from 'emailjs-com';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -10,15 +11,26 @@ const Contact: React.FC = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    alert('Message envoyé avec succès !');
-    setFormData({ name: '', email: '', message: '' });
+  
+    try {
+      await emailjs.send(
+        'service_vrrf244', // service ID
+        'template_zb9hjza', // template ID
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        'JFKYVOedqthwAv39A' // user ID (public key)
+      );
+      alert('Message envoyé avec succès !');
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error('Erreur lors de l\'envoi du message:', error);
+    }
     setIsSubmitting(false);
   };
 
