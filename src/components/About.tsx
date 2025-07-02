@@ -59,7 +59,7 @@ const About: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Formation</h3>
-                  <p className="text-gray-600 dark:text-gray-300">Étudiant en Génie Logiciel à l'IUC et en cours d'optention du BTS</p>
+                  <p className="text-gray-600 dark:text-gray-300">Étudiant en Génie Logiciel à l'IUC et en cours d'obtention du BTS</p>
                 </div>
               </div>
             </div>
