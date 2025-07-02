@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github, Code, Gamepad2, Globe } from 'lucide-react';
+import {Github, Code, Globe } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const projects = [
@@ -14,20 +14,10 @@ const Projects: React.FC = () => {
       icon: <Globe className="w-5 h-5" />
     },
     {
-      title: "Jeu 3D Adventure",
-      description: "Jeu d'aventure 3D développé avec Unreal Engine 5, incluant des mécaniques de combat et d'exploration",
-      image: "https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Unreal Engine 5", "C++", "BluePrint", "Blender"],
-      demoLink: "#",
-      githubLink: "#",
-      category: "game",
-      icon: <Gamepad2 className="w-5 h-5" />
-    },
-    {
       title: "Gestionnaire de Tâches",
       description: "Application desktop pour la gestion de projets et tâches avec interface intuitive",
       image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Java", "JavaFX", "SQLite"],
+      technologies: ["Java", "MySQL"],
       demoLink: "#",
       githubLink: "#",
       category: "desktop",
@@ -44,20 +34,10 @@ const Projects: React.FC = () => {
       icon: <Globe className="w-5 h-5" />
     },
     {
-      title: "Jeu Mobile Puzzle",
-      description: "Jeu de puzzle mobile avec plus de 100 niveaux et système de progression",
-      image: "https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Unity", "C#", "Android SDK"],
-      demoLink: "#",
-      githubLink: "#",
-      category: "game",
-      icon: <Gamepad2 className="w-5 h-5" />
-    },
-    {
       title: "API REST Node.js",
       description: "API robuste pour application mobile avec authentification JWT et base de données MongoDB",
       image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Node.js", "Express.js", "MongoDB", "JWT"],
+      technologies: ["Node.js", "Express.js", "MySQL", "JWT"],
       demoLink: "#",
       githubLink: "#",
       category: "web",
@@ -149,13 +129,6 @@ const Projects: React.FC = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <a
-                    href={project.demoLink}
-                    className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:shadow-lg transform hover:scale-105 transition-all duration-200"
-                  >
-                    <ExternalLink size={16} />
-                    Démo
-                  </a>
                   <a
                     href={project.githubLink}
                     className="flex items-center gap-2 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:border-blue-500 hover:text-blue-500 px-4 py-2 rounded-lg font-medium transition-all duration-200"

@@ -6,7 +6,7 @@ const About: React.FC = () => {
     {
       category: "Développement Web",
       icon: <Code className="w-6 h-6" />,
-      technologies: ["HTML5", "CSS3", "JavaScript", "PHP", "Node.js", "Express.js", "Laravel", "Bootstrap", "jQuery"],
+      technologies: ["HTML5", "CSS3", "JavaScript", "PHP", "Node.js", "Express.js", "Laravel", "Bootstrap", "jQuery", "Tailwind CSS", "React"],
       color: "from-blue-500 to-cyan-500"
     },
     {
@@ -18,13 +18,13 @@ const About: React.FC = () => {
     {
       category: "Développement de Jeux",
       icon: <Gamepad2 className="w-6 h-6" />,
-      technologies: ["Unreal Engine 5", "Unity", "C#", "C++", "BluePrint"],
+      technologies: ["Unreal Engine 5", "BluePrint"],
       color: "from-purple-500 to-pink-500"
     },
     {
       category: "Modélisation & Design",
       icon: <Palette className="w-6 h-6" />,
-      technologies: ["Blender", "MERISE", "UML"],
+      technologies: ["MERISE", "UML"],
       color: "from-orange-500 to-red-500"
     }
   ];
@@ -59,7 +59,7 @@ const About: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Formation</h3>
-                  <p className="text-gray-600 dark:text-gray-300">Étudiant en Génie Logiciel à l'IUC</p>
+                  <p className="text-gray-600 dark:text-gray-300">Étudiant en Génie Logiciel à l'IUC et en cours d'optention du BTS</p>
                 </div>
               </div>
             </div>
