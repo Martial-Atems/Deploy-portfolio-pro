@@ -5,6 +5,7 @@ const Projects: React.FC = () => {
   const projects = [
     {
       title: "Application Web E-commerce",
+      status: "En Cours",
       description: "Plateforme e-commerce complète avec panier, paiement et gestion des commandes",
       image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
       technologies: ["PHP", "Laravel", "MySQL", "Bootstrap", "JavaScript"],
@@ -15,6 +16,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "Gestionnaire de Tâches",
+      status: "En Cours",
       description: "Application desktop pour la gestion de projets et tâches avec interface intuitive",
       image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
       technologies: ["Java", "MySQL"],
@@ -25,6 +27,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "Portfolio Interactif",
+      status: "Terminé",
       description: "Site portfolio responsive avec animations et design moderne",
       image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
@@ -35,6 +38,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "API REST Node.js",
+      status: "Terminé",
       description: "API robuste pour application mobile avec authentification JWT et base de données MongoDB",
       image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
       technologies: ["Node.js", "Express.js", "MySQL", "JWT"],
@@ -101,10 +105,14 @@ const Projects: React.FC = () => {
                   alt={project.title}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
+                
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute top-4 left-4 flex items-center gap-2 bg-white/90 dark:bg-gray-800/90 px-3 py-1 rounded-full">
                   {project.icon}
-                  <span className="text-sm font-medium capitalize">{project.category}</span>
+                  <span className="text-sm font-medium capitalize">
+                    {project.category} 
+                    <p className="text-sm absolute font-semibold mb-2 text-green-600 dark:text-green-400">{project.status}</p>
+                  </span>
                 </div>
               </div>
 
