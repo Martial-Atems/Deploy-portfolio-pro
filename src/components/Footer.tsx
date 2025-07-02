@@ -37,7 +37,7 @@ const Footer = () => {
                 <span className="text-blue-400">Atemena</span> Martial
               </h3>
               <p className="text-gray-400 leading-relaxed">
-                Développeur junior passionné par la création d'expériences numériques innovantes 
+                Développeur junior full-stack passionné par la création d'expériences numériques innovantes 
                 et l'apprentissage continu des nouvelles technologies.
               </p>
             </div>
